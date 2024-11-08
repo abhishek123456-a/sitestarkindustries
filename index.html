@@ -215,32 +215,36 @@
             <!-- Replace 'VIDEO_ID' with the actual YouTube video ID -->
             <iframe src="blank" frameborder="0" allowfullscreen></iframe>
             <div class="tags">
-
-                <font id="maths_shobhit" onclick="maths_by_shobhit()">
-                    Maths by shobhit
-                </font>
+                <div id="tag1">
+                    <font id="maths_shobhit" onclick="maths_by_shobhit()" style="display: block;">
+                        Maths by shobhit
+                    </font><img class="infotoggle" src="images/info.png" alt="" title="Documents">
+                </div>
                 <br>
+                <div id="tag2">
+                    <font id="java_cwh" onclick="java_cwh()" style="display: block; width: fit-content; ">
+                        Java CWH
+                    </font><img class="infotoggle" src="images/info.png" alt="" title="Documents">
+                </div>
                 <br>
-                <font id="java_cwh" onclick="java_cwh()">
-                    Java CWH
-                </font>
+                <div id="tag3">
+                    <font id="android_wscube" onclick="android_wscube()" style="display: inline-block; width: fit-content;">
+                        Android Wscube
+                    </font><img class="infotoggle" src="images/info.png" alt="" title="Documents">
+                </div>
                 <br>
-                <br>
-                <font id="android_wscube" onclick="android_wscube()">
-                    Android Wscube
-                </font>
-                <br>
-                <br>
-                <a href="pdf_viewer.html" target="_blank">
-                    <font id="java_cwh_pdf">
-                        Java PDF CWH
-                    </font>
+                <div id="tag4"> <a href="pdf_viewer.html" target="_blank" style="display: block; width: fit-content;">
+                        <font id="java_cwh_pdf">
+                            Java PDF CWH
+                        </font><img class="infotoggle" src="images/info.png" alt="" title="Documents">
+                    </a></div>
                 </a>
                 <br>
-                <br>
-                <font id="CWH_Android" onclick="CWH_Android()">
-                    CWH Andorid 
-                </font>
+                <div id="tag5">
+                    <font id="CWH_Android" onclick="CWH_Android()" style="display: block; width: fit-content;">
+                        CWH Andorid
+                    </font><img class="infotoggle" src="images/info.png" alt="" title="Documents">
+                </div>
             </div>
 
         </div>
@@ -276,7 +280,7 @@
     function android_wscube() {
 
         var input = document.getElementById('userInput').value;
-        
+
         document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/https://www.youtube.com/watch?v=HyU4vkZ2NB8&list=PLjVLYmrlmjGdDps6HAwOOVoAtBPAgIOXL';
 
 

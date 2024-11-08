@@ -63,9 +63,10 @@ button{
     
 }
 .tags{
-    width: 200px;
+    width: 300px;
     height: fit-content;
     margin-top: 200px;
+    
 
 }
 #java_cwh{
@@ -105,10 +106,37 @@ button{
     font-family: Consolas;
     background-color: rgb(230, 0, 255);
     padding: 8px 20px 8px 20px;
-    border-radius: 1029328837px;
+    border-radius: 10293px;
     cursor: pointer;
 }
 embed{
     width: 100%;
 
 }
+.infotoggle{
+    height: 20px;
+    width:20px;
+    margin: 10px 0px 0px 5px;
+    
+}
+#tag1{
+    display: flex;
+  
+}
+#tag2{
+    display: flex;
+  
+}
+#tag3{
+    display: flex;
+  
+}
+#tag4{
+    display: flex;
+  
+}
+#tag5{
+    display: flex;
+  
+}
+
