@@ -239,7 +239,12 @@
                 <br>
                 <br>
                 <font id="CWH_Android" onclick="CWH_Android()">
-                    CWH Andorid 
+                    CWH Andorid
+                </font>
+                <br>
+                <br>
+                <font id="nafay_3D" onclick="nafay_3D()">
+                    Nafay 3D
                 </font>
             </div>
 
@@ -257,14 +262,20 @@
     // Example: document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/NEW_VIDEO_ID';
 
 
-    function showInput() {
-        var input = document.getElementById('userInput').value;
-        input = input.replace("https://www.youtube.com/", "")
-        document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/' + input;
+    function showInput(event) {
 
-        document.getElementById('title').innerHTML = input;
+        // document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/' + input;
+        if (event.key === 'Enter') {
+
+            var input = document.getElementById('userInput').value;
+            input = input.replace("https://www.youtube.com/watch?v=", "");
+            //alert(input);
+            document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/' + input;
+        };
+
 
     }
+    addEventListener('keydown', showInput);
     function java_cwh() {
         var input = document.getElementById('userInput').value;
         input = input.replace("https://www.youtube.com/", "")
@@ -276,7 +287,7 @@
     function android_wscube() {
 
         var input = document.getElementById('userInput').value;
-        
+
         document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/https://www.youtube.com/watch?v=HyU4vkZ2NB8&list=PLjVLYmrlmjGdDps6HAwOOVoAtBPAgIOXL';
 
 
@@ -301,7 +312,17 @@
 
 
     }
-    
+    function nafay_3D() {
+
+var input = document.getElementById('userInput').value;
+input = input.replace("https://www.youtube.com/", "")
+document.querySelector('#video-container iframe').src = 'https://www.youtube.com/embed/fUA8tfC-0-E';
+
+
+
+
+}
+
 
 
 </script>
